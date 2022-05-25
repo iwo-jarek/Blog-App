@@ -12,7 +12,7 @@ const Posts = () => {
       <div class="d-flex justify-content-between">
         <h4>All posts</h4>
         <Link to="/post/add">
-          <Button variant="outline-primary">Add post</Button>
+          <Button className="mb-3" variant="outline-primary">Add post</Button>
         </Link>
       </div>
       <Row xs={1} md={3} className="g-4">
