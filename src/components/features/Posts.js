@@ -9,7 +9,7 @@ const Posts = () => {
 
   return (
     <section>
-      <div>
+      <div className="d-flex justify-content-between">
         <h4>All posts</h4>
         <Link to="/post/add">
           <Button className="mb-3" variant="outline-primary">Add post</Button>
