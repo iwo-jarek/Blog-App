@@ -9,7 +9,7 @@ const Posts = () => {
 
   return (
     <section>
-      <div class="d-flex justify-content-between">
+      <div>
         <h4>All posts</h4>
         <Link to="/post/add">
           <Button className="mb-3" variant="outline-primary">Add post</Button>
@@ -23,8 +23,8 @@ const Posts = () => {
               <Card.Subtitle className="my-2"><span>Author: </span>{post.author}</Card.Subtitle>
               <Card.Subtitle className="my-2"><span>Published: </span>{post.publishedDate}</Card.Subtitle>
               <Card.Text className="my-3">{post.shortDescription}</Card.Text>
-              <Link to="/post/:id">
-                <Button variant="primary">Add post</Button>
+              <Link key={post.id} to={"/post/" + post.id}>
+                <Button variant="primary">Read more</Button>
               </Link>
             </Card.Body>
           </Card>
