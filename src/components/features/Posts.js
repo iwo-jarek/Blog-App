@@ -29,7 +29,7 @@ const Posts = () => {
             </Card.Body>
           </Card>
         </Col>
-        )}
+       )} 
       </Row>
     </section>
   );

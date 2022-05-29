@@ -32,7 +32,7 @@ const SinglePost = () => {
         <h3>{postData.title}</h3>
         </Col>
         <Col>
-        <Link to="/post/edit/:id">
+        <Link to={"/post/edit/" + id}>
           <Button className="m-2" variant="outline-primary">Edit</Button>
         </Link>
         <Button variant="outline-danger" onClick={handleShow}>Delete</Button>

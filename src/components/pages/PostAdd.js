@@ -1,10 +1,15 @@
+import {  Row } from "react-bootstrap";
+import AddPostForm from "../features/AddPostForm";
+
 const PostAdd = () => {
-    return (
-    <div>
-      <h1>Post Add</h1>
-      <h3>lorem ipsum</h3>
-    </div>
-    )
-  }
-  
-  export default PostAdd;
+  return (
+
+    <Row className="d-flex justify-content-center">
+      <h2>Add post</h2>
+      <AddPostForm />
+    </Row>
+
+  )
+}
+
+export default PostAdd;

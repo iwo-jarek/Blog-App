@@ -8,6 +8,7 @@ import PostEdit from './components/pages/PostEdit';
 import NotFound from './components/pages/NotFound';
 import Header from './components/views/Header';
 import Footer from './components/views/Footer';
+import { addPost } from './redux/postsRedux';
 
 const App = () => {
   return (
