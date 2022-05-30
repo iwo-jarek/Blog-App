@@ -1,12 +1,12 @@
-import EditPostForm from "../features/PostForm";
+import EditPostForm from "../features/EditPostForm";
 
 const PostEdit = () => {
     return (
-      <div className="row d-flex justify-content-center">
+      <div className="row">
       <h2>Edit post</h2>
       <EditPostForm />
     </div>
-    )
-  }
+    );
+  };
   
   export default PostEdit;

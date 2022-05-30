@@ -3,7 +3,6 @@ import { editPost, getPostById } from "../../redux/postsRedux";
 import { useSelector, useDispatch } from "react-redux";
 import PostForm from "./PostForm";
 
-
 const EditPostForm = () => {
   const { id } = useParams();
   const postData = useSelector(state => getPostById(state, id))
@@ -28,8 +27,7 @@ const EditPostForm = () => {
       shortDescription={postData.shortDescription}
       content={postData.content}
     />
-  )
-
-}
+  );
+};
 
 export default EditPostForm;
