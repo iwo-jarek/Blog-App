@@ -1,12 +1,9 @@
-import { useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
-import { getPostById } from "../../redux/postsRedux";
-import { Button, Col, Modal, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import { useState } from "react";
-import { useDispatch } from "react-redux";
-import { removePost } from "../../redux/postsRedux";
-import { Navigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { useParams, Link, Navigate } from "react-router-dom";
+import { getPostById, removePost } from "../../redux/postsRedux";
+import { Button, Col, Modal, Row } from "react-bootstrap";
+
 
 const SinglePost = () => {
   const { id } = useParams();
@@ -61,9 +58,6 @@ const SinglePost = () => {
         </Modal.Footer>
       </Modal>
     </section>
-
-
-
   )
 }
 export default SinglePost;

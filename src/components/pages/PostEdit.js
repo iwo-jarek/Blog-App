@@ -1,8 +1,10 @@
+import EditPostForm from "../features/PostForm";
+
 const PostEdit = () => {
     return (
-    <div>
-      <h1>Post Edit</h1>
-      <h3>lorem ipsum</h3>
+      <div className="row d-flex justify-content-center">
+      <h2>Edit post</h2>
+      <EditPostForm />
     </div>
     )
   }

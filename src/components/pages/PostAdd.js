@@ -1,13 +1,12 @@
-import {  Row } from "react-bootstrap";
 import AddPostForm from "../features/AddPostForm";
 
 const PostAdd = () => {
   return (
 
-    <Row className="d-flex justify-content-center">
+    <div>
       <h2>Add post</h2>
       <AddPostForm />
-    </Row>
+    </div>
 
   )
 }
