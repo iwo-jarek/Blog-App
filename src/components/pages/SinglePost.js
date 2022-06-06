@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams, Link, Navigate } from "react-router-dom";
 import { getPostById, removePost } from "../../redux/postsRedux";
 import { Button, Col, Modal, Row } from "react-bootstrap";
+import dateToStr from "../../utils/dateToStr";
 
 
 const SinglePost = () => {
@@ -37,8 +38,8 @@ const SinglePost = () => {
       </Row>
       <div>
       <h5 className="my-2"><span>Author: </span>{postData.author}</h5>
-      <h5 className="my-2"><span>Published: </span>{postData.publishedDate}</h5>
-      <p className="mt-3">{postData.content}</p>
+      <h5 className="my-2"><span>Published: </span>{dateToStr(postData.publishedDate)}</h5>
+      <p dangerouslySetInnerHTML={{ __html: postData.content }} />
       </div>
       <Modal
         show={show}
