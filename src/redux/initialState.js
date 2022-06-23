@@ -36,6 +36,15 @@ const initialState = {
       publishedDate: new Date('02-02-2022'),
       category: 'News',
       author: 'John Doe'
+    },
+    {
+      id: '5',
+      title: 'Article title V',
+      shortDescription: 'Short description of the article...',
+      content: 'Main content of the article',
+      publishedDate: new Date('02-02-2022'),
+      category: 'Miscellaneous',
+      author: 'John Doe'
     }
   ],
 
@@ -54,7 +63,7 @@ const initialState = {
     },
     {
       id: '4',
-      name: 'miscellaneous'
+      name: 'Miscellaneous'
     }
   ]
 };
