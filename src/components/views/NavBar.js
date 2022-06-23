@@ -10,6 +10,7 @@ const NavBar = () => {
           <Navbar.Brand href="/">Blog App</Navbar.Brand>
           <Nav className="ml-auto">
             <Nav.Link as={NavLink} href="/">Home</Nav.Link>
+            <Nav.Link as={NavLink} href="/categories">Categories</Nav.Link>
             <Nav.Link as={NavLink} href="/about">About</Nav.Link>
           </Nav>
 

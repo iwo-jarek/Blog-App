@@ -39,6 +39,7 @@ const SinglePost = () => {
       <div>
       <h5 className="my-2"><span>Author: </span>{postData.author}</h5>
       <h5 className="my-2"><span>Published: </span>{dateToStr(postData.publishedDate)}</h5>
+      <h5 className="my-2"><span>Category: </span>{postData.category}</h5>
       <p dangerouslySetInnerHTML={{ __html: postData.content }} />
       </div>
       <Modal
