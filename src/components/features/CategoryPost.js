@@ -1,4 +1,4 @@
-import { Card, Button, Row, Col } from "react-bootstrap";
+import { Card, Button, Col } from "react-bootstrap";
 import { Link, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { getPostsByCategory } from "../../redux/postsRedux";
