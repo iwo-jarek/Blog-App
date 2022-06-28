@@ -68,9 +68,9 @@ const PostForm = ({ action, actionText, ...props }) => {
         <Form.Label>Categories</Form.Label>
         <Form.Select value={category}
           onChange={e => setCategory(e.target.value)}>
-        <option>Select category...</option>
+          <option>Select category...</option>
           {selectCategory.map(category =>
-            (<option key={category.id} value={category.title} >{category.title}</option>))}
+            (<option key={category.id} value={category.name} >{category.name}</option>))}
         </Form.Select>
       </Form.Group>
 
@@ -87,7 +87,6 @@ const PostForm = ({ action, actionText, ...props }) => {
         {errors.shortDescription && <small className="d-block form-text text-danger mt-2">Short Description is too short (min is 3)</small>}
       </Form.Group>
 
-
       <Form.Group className="mb-3 col-6" controlId="formContent">
         <Form.Label>Main content</Form.Label>
         <ReactQuill
@@ -97,6 +96,7 @@ const PostForm = ({ action, actionText, ...props }) => {
         />
         {contentError && <small className="d-block form-text text-danger mt-2">Content can't be empty</small>}
       </Form.Group>
+
       <Button variant="primary" type="submit">
         Add post
       </Button>
